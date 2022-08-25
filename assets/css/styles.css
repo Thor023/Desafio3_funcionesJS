@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10rem auto;
+}
+
+.navbar {
+    display: grid;
+    grid-template-rows: 95% 5%;
+    height: 100vh;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(1, 0, 0, 0.2);
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.2);
+}
+
+.list {
+    padding-top: 10vh;
+}
+
+.list ul li{
+    padding-top: 2vh;
+    list-style: none;
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.gradient_bg {
+	background: linear-gradient(-45deg, #f20202, #893ce7, #23d532, #2338d5);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+.gradient_bg:hover{
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+}
+
+.welcome {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding-top: 23rem;
+    font-size: 4rem;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400%;
+    animation: move 5s ease infinite;
+    background-image: linear-gradient( 68.7deg,  rgba(29,173,235,1) 13.2%, rgba(137,149,250,1) 29.8%, rgb(43, 6, 37) 48.9%, rgb(145, 45, 76) 68.2%, rgba(255,94,0,1) 86.4% );
+}
+
+.function-content, .arrow-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15rem;
+}
+
+.paint-content, .keydown-content {
+    text-align: center;
+}
+
+.click {
+    margin-top: 18rem;
+    font-size: xx-large;
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400%;
+    animation: move 5s ease infinite;
+    background-image: linear-gradient( 68.7deg,  rgba(29,173,235,1) 13.2%, rgba(137,149,250,1) 29.8%, rgba(229,109,212,1) 48.9%, rgba(255,68,128,1) 68.2%, rgba(255,94,0,1) 86.4% );
+}
+
+#ele1 {
+    text-align: center;
+    font-size: xx-large;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.function-question, .function-solution {
+    margin: 2rem;
+    color: white;
+}
+
+.function-question h2, .function-solution h2{
+    margin-bottom: 1rem;
+}
+
+.rst-button {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border-radius: 1.5rem;
+}
+
+#card-1 {
+    background-color: red;
+}
+
+#card-2 {
+    background-color: blue;
+}
+
+#card-3 {
+    background-color: green;
+}
+
+#card-4 {
+    background-color: yellow;
+}
+
+.kaydown-main {
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align: center;
+    height: 80%;
+}
+
+.keydown-content, .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.instructions-content, .instructions-title {
+    padding-top: 5vh;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.instructions-title {
+    padding-top: 30vh;
+}
+
+.instructions-content {
+    font-size: x-large;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes move {
+    0%,100%{
+        background-position: 200% 0%;
+    }
+
+    50%{
+        background-position: 0% 200%;
+    }
+}
